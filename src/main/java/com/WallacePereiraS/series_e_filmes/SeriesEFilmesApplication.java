@@ -17,7 +17,7 @@ public class SeriesEFilmesApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		var consumoApi = new ConsumoApi();
-		String titulo = "Harry+Potter";
+		String titulo = "barbie";
 		var json = consumoApi.obterDados("http://www.omdbapi.com/?t=" + titulo + "&apikey=36bd57cb");
 		System.out.println(json);
 
